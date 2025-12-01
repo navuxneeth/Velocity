@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity - Retro Sensor Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pixel-art.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <span class="pixel-icon">⚡</span>
+                    VELOCITY SENSOR DASHBOARD
+                    <span class="pixel-icon">⚡</span>
+                </h1>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">☀️</span>
+                </button>
+            </div>
+            <div class="subtitle">Real-time device sensor monitoring in pixel-perfect retro style</div>
+        </header>
+
+        <!-- Permission Request Banner -->
+        <div id="permissionBanner" class="permission-banner hidden">
+            <p>🎮 Grant sensor permissions for full experience!</p>
+            <button id="requestPermissions" class="pixel-button">GRANT ACCESS</button>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="masonry-grid" id="sensorGrid">
+            <!-- Sensors will be dynamically added here -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with 8-bit love 💾 | Device sensors detected in real-time</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
