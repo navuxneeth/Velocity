@@ -229,6 +229,10 @@ body::after {
 }
 
 /* Add pixel decorations to specific large cards */
+#sensor-network .sensor-details {
+    position: relative;
+}
+
 #sensor-network .sensor-details::before {
     content: '📊';
     position: absolute;
@@ -237,6 +241,10 @@ body::after {
     right: -20px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+#sensor-gps .sensor-content {
+    position: relative;
 }
 
 #sensor-gps .sensor-content::before {

@@ -20,7 +20,7 @@ themeToggle.addEventListener('click', () => {
 // Sensor Grid
 const sensorGrid = document.getElementById('sensorGrid');
 
-// Sensor Definitions with 30+ features
+// Sensor Definitions with 31 features
 const sensors = [
     {
         id: 'battery',
